@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Axenide/Ambxst/main/docs/mods/settings.schema.json",
+  "version": 1,
+  "fields": [
+    {
+      "key": "enableSnippet",
+      "label": "Turn the snippet on",
+      "description": "Enable the \"ambxst\" snippet in each vault the first time it is written. If you turn it off in Obsidian later, it stays off.",
+      "type": "boolean",
+      "default": true,
+      "restartRequired": false
+    },
+    {
+      "key": "matchMode",
+      "label": "Match dark/light",
+      "description": "Switch Obsidian's base theme to dark or light with the Ambxst palette.",
+      "type": "boolean",
+      "default": true,
+      "restartRequired": false
+    },
+    {
+      "key": "vaults",
+      "label": "Obsidian vaults",
+      "description": "Leave empty to use every vault Obsidian knows. Otherwise, vault folders separated by commas, e.g. ~/Documents/Notes.",
+      "type": "string",
+      "default": "",
+      "restartRequired": false
+    }
+  ]
+}

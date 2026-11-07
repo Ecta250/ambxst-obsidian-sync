@@ -1,0 +1,23 @@
+diff --git a/modules/theme/Colors.qml b/modules/theme/Colors.qml
+index 4af1dcbf..582f0167 100644
+--- a/modules/theme/Colors.qml
++++ b/modules/theme/Colors.qml
+@@ -61,6 +61,10 @@ FileView {
+         id: pywalZenGenerator
+     }
+ 
++    property ObsidianGenerator obsidianGenerator: ObsidianGenerator {
++        id: obsidianGenerator
++    }
++
+     property Timer generationTimer: Timer {
+         id: generationTimer
+         interval: 100
+@@ -74,6 +78,7 @@ FileView {
+             nvChadGenerator.generate(colors);
+             discordGenerator.generate(colors);
+             pywalZenGenerator.generate(colors);
++            obsidianGenerator.generate(colors);
+         }
+     }
+ 
